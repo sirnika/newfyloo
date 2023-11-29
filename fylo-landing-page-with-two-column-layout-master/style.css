@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+}
+h1,
+a {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+}
+a {
+  color: var(--VeryDarkBlue);
+}
+.bg-image {
+  background-image: url(./images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3rem 0;
+  padding: 3rem 0;
+}
+.green-line {
+  border: 0.1px solid;
+  width: 165px;
+}
+.bg-blue {
+  background-color: var(--DesaturatedBlue);
+}
+.input-adjust,
+.btn-adjust {
+  width: 75%;
+}
+footer {
+  background-color: var(--VeryDarkBlue);
+}
+footer span {
+  color: var(--LightGrayishBlue);
+}
+.bi {
+  color: var(--LightGrayishBlue);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .img-adjust {
+    width: 400px;
+    height: 500px;
+  }
+  .width-adjust {
+    width: 50%;
+  }
+  .bg-image {
+    background-image: url(./images/bg-curve-desktop.svg);
+  }
+  .input-adjust {
+    width: 80%;
+  }
+  .btn-adjust {
+    width: 220px;
+  }
+}
+@media (min-width: 992px) {
+  .img-adjust {
+    width: 450px;
+    height: 500px;
+  }
+  .width-adjust {
+    width: 45%;
+  }
+  button {
+    width: 300px !important;
+  }
+  .btn-adjust {
+    width: 240px !important;
+  }
+}
